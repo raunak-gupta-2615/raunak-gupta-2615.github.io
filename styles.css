@@ -860,10 +860,10 @@ section {
   max-width: 10000px;
   margin: 2rem auto;
   padding: 7rem;
-  background: rgba(0, 0, 0, 0.7); /* Increased black opacity */
-  backdrop-filter: blur(5px); /* Optional blur effect */
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px); 
   border-radius: 1rem;
-  border: 1px solid rgba(255, 215, 0, 0.2); /* Gold border */
+  border: 1px solid rgba(255, 215, 0, 0.2); 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 #textInput {

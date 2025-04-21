@@ -47,8 +47,13 @@ function getElementType(element) {
 }
 
 function logEvent(eventType, objectType) {
-  const timestamp = new Date().toISOString();
-  console.log(`${timestamp}, ${eventType}, ${objectType}`);
+  const now = new Date();
+
+  const istOffset = 5.5 * 60 * 60 * 1000; 
+  const istTime = new Date(now.getTime() + istOffset);
+
+  const timestamp = istTime.toISOString().replace('T', ' ').substring(0, 19); 
+  console.log(`${timestamp} IST, ${eventType}, ${objectType}`);
 }
 
 function setupViewportTracking() {
